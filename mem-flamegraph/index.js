@@ -25,15 +25,25 @@ const { clear, debug } = flags;
 
 	debug && log(flags);
 
-	const appProcess  = spawn('node', ['--prof', input]);
+	const appProcess = spawn('node', ['--prof', '--no-logfile-per-isolate', input]);
 	appProcess.stdout.pipe(process.stdout);
-  	appProcess.stderr.pipe(process.stderr);
-	
-	// Capture garbage collection logs to a file
-	const gcLog = fs.createWriteStream('gc.log');
-	appProcess.stdout.pipe(gcLog);
-  
+	appProcess.stderr.pipe(process.stderr);
+
+	process.on('SIGINT', () => {
+		appProcess.kill('SIGINT'); // Exit the appProcess without exiting the main Node.js process
+	});
+
 	appProcess.on('exit', (code) => {
-		process.exit(code);
+		const isolateLogPath = `v8.log`;
+		const isolateLogContent = fs.readFileSync(isolateLogPath, { encoding: 'utf-8' });
+		const app2Process = spawn('node', ['--prof', '--prof-process', '--preprocess', '-j', isolateLogPath, '|', 'flamebearer'],{shell: true});
+		app2Process.stdout.pipe(process.stdout);
+		app2Process.stderr.pipe(process.stderr);
+		app2Process.on('exit', (code2) => {
+			console.log('flamegraph created')
+			process.exit(code2);
+			process.exit(code)
+		});
+
 	});
 })();
