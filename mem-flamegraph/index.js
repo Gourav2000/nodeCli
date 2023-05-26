@@ -24,25 +24,36 @@ const { clear, debug } = flags;
 	input.includes(`help`) && cli.showHelp(0);
 
 	debug && log(flags);
+	process.env['NODE_INSPECT_RESUME_ON_START'] = 1
+	const appProcess = spawn('node', ['inspect', input]);
 
-	const appProcess = spawn('node', ['--prof', '--no-logfile-per-isolate', input]);
-	appProcess.stdout.pipe(process.stdout);
-	appProcess.stderr.pipe(process.stderr);
+	appProcess.stdin.write('profile');
 
-	process.on('SIGINT', () => {
-		appProcess.kill('SIGINT'); // Exit the appProcess without exiting the main Node.js process
+	appProcess.stdout.on('data', (data) => {
+		console.log(`Child process output: ${data}`);
 	});
 
-	appProcess.on('exit', (code) => {
-		const isolateLogPath = `v8.log`;
-		const isolateLogContent = fs.readFileSync(isolateLogPath, { encoding: 'utf-8' });
-		const app2Process = spawn('node', ['--prof', '--prof-process', '--preprocess', '-j', isolateLogPath, '|', 'flamebearer'],{shell: true});
-		app2Process.stdout.pipe(process.stdout);
-		app2Process.stderr.pipe(process.stderr);
+	appProcess.on('error', (err) => {
+		console.error(`Error occurred: ${err}`);
+	});
+
+	process.on('SIGINT', async () => {
+		// appProcess.kill('SIGINT'); // Exit the appProcess without exiting the main Node.js process
+		appProcess.stdin.write('profileEnd')
+		await appProcess.stdin.write(`profiles[n].save(filepath = 'node.cpuprofile')`)
+		await appProcess.stdin.write('.exit')
+	});
+
+	appProcess.on('exit', async (code) => {
+		const app2Process = spawn('speedscope', ['node.cpuprofile']);
 		app2Process.on('exit', (code2) => {
 			console.log('flamegraph created')
 			process.exit(code2);
 			process.exit(code)
+		});
+
+		app2Process.on('error', (err) => {
+			console.error(`Error occurred: ${err}`);
 		});
 
 	});

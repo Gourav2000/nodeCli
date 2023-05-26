@@ -1,0 +1,30 @@
+<ref *1> {
+  name: '(root)',
+  value: 0,
+  executionTime: 30005,
+  children: [
+    {
+      name: 'parserOnHeadersComplete',
+      value: 0,
+      executionTime: 30005,
+      children: [Array],
+      profileNode: [Object],
+      nodeModule: undefined,
+      parent: [Circular *1]
+    }
+  ],
+  profileNode: {
+    id: 1,
+    callFrame: {
+      functionName: '(root)',
+      scriptId: '0',
+      url: '',
+      lineNumber: -1,
+      columnNumber: -1
+    },
+    hitCount: 0,
+    children: [ 2 ]
+  },
+  nodeModule: undefined
+}
+Example app listening on port 4000

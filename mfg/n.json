@@ -1,0 +1,887 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "callFrame": {
+                "functionName": "(root)",
+                "scriptId": "0",
+                "url": "",
+                "lineNumber": -1,
+                "columnNumber": -1
+            },
+            "hitCount": 0,
+            "children": [
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "callFrame": {
+                "functionName": "parserOnHeadersComplete",
+                "scriptId": "511",
+                "url": "node:_http_common",
+                "lineNumber": 71,
+                "columnNumber": 32
+            },
+            "hitCount": 0,
+            "children": [
+                3
+            ]
+        },
+        {
+            "id": 3,
+            "callFrame": {
+                "functionName": "parserOnIncoming",
+                "scriptId": "517",
+                "url": "node:_http_server",
+                "lineNumber": 971,
+                "columnNumber": 25
+            },
+            "hitCount": 0,
+            "children": [
+                4
+            ]
+        },
+        {
+            "id": 4,
+            "callFrame": {
+                "functionName": "emit",
+                "scriptId": "29",
+                "url": "node:events",
+                "lineNumber": 459,
+                "columnNumber": 43
+            },
+            "hitCount": 0,
+            "children": [
+                5
+            ]
+        },
+        {
+            "id": 5,
+            "callFrame": {
+                "functionName": "app",
+                "scriptId": "482",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/express.js",
+                "lineNumber": 37,
+                "columnNumber": 20
+            },
+            "hitCount": 0,
+            "children": [
+                6
+            ]
+        },
+        {
+            "id": 6,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "487",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/application.js",
+                "lineNumber": 164,
+                "columnNumber": 28
+            },
+            "hitCount": 0,
+            "children": [
+                7
+            ]
+        },
+        {
+            "id": 7,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 135,
+                "columnNumber": 30
+            },
+            "hitCount": 0,
+            "children": [
+                8
+            ]
+        },
+        {
+            "id": 8,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                9
+            ]
+        },
+        {
+            "id": 9,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                10
+            ]
+        },
+        {
+            "id": 10,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                11
+            ]
+        },
+        {
+            "id": 11,
+            "callFrame": {
+                "functionName": "trim_prefix",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 292,
+                "columnNumber": 22
+            },
+            "hitCount": 0,
+            "children": [
+                12
+            ]
+        },
+        {
+            "id": 12,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                13
+            ]
+        },
+        {
+            "id": 13,
+            "callFrame": {
+                "functionName": "query",
+                "scriptId": "521",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/middleware/query.js",
+                "lineNumber": 38,
+                "columnNumber": 23
+            },
+            "hitCount": 0,
+            "children": [
+                14
+            ]
+        },
+        {
+            "id": 14,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                15
+            ]
+        },
+        {
+            "id": 15,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                16
+            ]
+        },
+        {
+            "id": 16,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                17
+            ]
+        },
+        {
+            "id": 17,
+            "callFrame": {
+                "functionName": "trim_prefix",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 292,
+                "columnNumber": 22
+            },
+            "hitCount": 0,
+            "children": [
+                18
+            ]
+        },
+        {
+            "id": 18,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                19
+            ]
+        },
+        {
+            "id": 19,
+            "callFrame": {
+                "functionName": "expressInit",
+                "scriptId": "520",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/middleware/init.js",
+                "lineNumber": 28,
+                "columnNumber": 29
+            },
+            "hitCount": 0,
+            "children": [
+                20
+            ]
+        },
+        {
+            "id": 20,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                21
+            ]
+        },
+        {
+            "id": 21,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                22
+            ]
+        },
+        {
+            "id": 22,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                23
+            ]
+        },
+        {
+            "id": 23,
+            "callFrame": {
+                "functionName": "trim_prefix",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 292,
+                "columnNumber": 22
+            },
+            "hitCount": 0,
+            "children": [
+                24
+            ]
+        },
+        {
+            "id": 24,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                25
+            ]
+        },
+        {
+            "id": 25,
+            "callFrame": {
+                "functionName": "corsMiddleware",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 202,
+                "columnNumber": 34
+            },
+            "hitCount": 0,
+            "children": [
+                26
+            ]
+        },
+        {
+            "id": 26,
+            "callFrame": {
+                "functionName": "optionsCallback",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 197,
+                "columnNumber": 33
+            },
+            "hitCount": 0,
+            "children": [
+                27
+            ]
+        },
+        {
+            "id": 27,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 203,
+                "columnNumber": 36
+            },
+            "hitCount": 0,
+            "children": [
+                28
+            ]
+        },
+        {
+            "id": 28,
+            "callFrame": {
+                "functionName": "originCallback",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 212,
+                "columnNumber": 38
+            },
+            "hitCount": 0,
+            "children": [
+                29
+            ]
+        },
+        {
+            "id": 29,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 218,
+                "columnNumber": 56
+            },
+            "hitCount": 0,
+            "children": [
+                30
+            ]
+        },
+        {
+            "id": 30,
+            "callFrame": {
+                "functionName": "cors",
+                "scriptId": "601",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/cors/lib/index.js",
+                "lineNumber": 158,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                31
+            ]
+        },
+        {
+            "id": 31,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                32
+            ]
+        },
+        {
+            "id": 32,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                33
+            ]
+        },
+        {
+            "id": 33,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                34
+            ]
+        },
+        {
+            "id": 34,
+            "callFrame": {
+                "functionName": "trim_prefix",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 292,
+                "columnNumber": 22
+            },
+            "hitCount": 0,
+            "children": [
+                35
+            ]
+        },
+        {
+            "id": 35,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                36
+            ]
+        },
+        {
+            "id": 36,
+            "callFrame": {
+                "functionName": "jsonParser",
+                "scriptId": "605",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/body-parser/lib/types/json.js",
+                "lineNumber": 100,
+                "columnNumber": 29
+            },
+            "hitCount": 0,
+            "children": [
+                37
+            ]
+        },
+        {
+            "id": 37,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                38
+            ]
+        },
+        {
+            "id": 38,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                39
+            ]
+        },
+        {
+            "id": 39,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                40
+            ]
+        },
+        {
+            "id": 40,
+            "callFrame": {
+                "functionName": "trim_prefix",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 292,
+                "columnNumber": 22
+            },
+            "hitCount": 0,
+            "children": [
+                41
+            ]
+        },
+        {
+            "id": 41,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                42
+            ]
+        },
+        {
+            "id": 42,
+            "callFrame": {
+                "functionName": "urlencodedParser",
+                "scriptId": "608",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/body-parser/lib/types/urlencoded.js",
+                "lineNumber": 78,
+                "columnNumber": 35
+            },
+            "hitCount": 0,
+            "children": [
+                43
+            ]
+        },
+        {
+            "id": 43,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 176,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                44
+            ]
+        },
+        {
+            "id": 44,
+            "callFrame": {
+                "functionName": "process_params",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 337,
+                "columnNumber": 46
+            },
+            "hitCount": 0,
+            "children": [
+                45
+            ]
+        },
+        {
+            "id": 45,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "502",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/index.js",
+                "lineNumber": 279,
+                "columnNumber": 63
+            },
+            "hitCount": 0,
+            "children": [
+                46
+            ]
+        },
+        {
+            "id": 46,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                47
+            ]
+        },
+        {
+            "id": 47,
+            "callFrame": {
+                "functionName": "dispatch",
+                "scriptId": "503",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/route.js",
+                "lineNumber": 97,
+                "columnNumber": 44
+            },
+            "hitCount": 0,
+            "children": [
+                48
+            ]
+        },
+        {
+            "id": 48,
+            "callFrame": {
+                "functionName": "next",
+                "scriptId": "503",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/route.js",
+                "lineNumber": 115,
+                "columnNumber": 15
+            },
+            "hitCount": 0,
+            "children": [
+                49
+            ]
+        },
+        {
+            "id": 49,
+            "callFrame": {
+                "functionName": "handle",
+                "scriptId": "505",
+                "url": "file:///D:/doc/node.js/mfg/node_modules/express/lib/router/layer.js",
+                "lineNumber": 85,
+                "columnNumber": 48
+            },
+            "hitCount": 0,
+            "children": [
+                50
+            ]
+        },
+        {
+            "id": 50,
+            "callFrame": {
+                "functionName": "",
+                "scriptId": "480",
+                "url": "file:///D:/doc/node.js/mfg/index.js",
+                "lineNumber": 22,
+                "columnNumber": 18
+            },
+            "hitCount": 2,
+            "children": [
+                51
+            ],
+            "positionTicks": [
+                {
+                    "line": 25,
+                    "ticks": 1
+                },
+                {
+                    "line": 26,
+                    "ticks": 1
+                }
+            ]
+        },
+        {
+            "id": 51,
+            "callFrame": {
+                "functionName": "performHeavyTask",
+                "scriptId": "480",
+                "url": "file:///D:/doc/node.js/mfg/index.js",
+                "lineNumber": 12,
+                "columnNumber": 25
+            },
+            "hitCount": 70,
+            "positionTicks": [
+                {
+                    "line": 16,
+                    "ticks": 62
+                },
+                {
+                    "line": 15,
+                    "ticks": 8
+                }
+            ]
+        }
+    ],
+    "startTime": 24577006581,
+    "endTime": 24577026130,
+    "samples": [
+        50,
+        50,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        51,
+        50
+    ],
+    "timeDeltas": [
+        10644,
+        456,
+        118,
+        114,
+        113,
+        117,
+        117,
+        116,
+        116,
+        117,
+        114,
+        116,
+        117,
+        117,
+        114,
+        113,
+        115,
+        116,
+        115,
+        120,
+        114,
+        111,
+        112,
+        113,
+        114,
+        115,
+        114,
+        114,
+        115,
+        115,
+        114,
+        114,
+        112,
+        114,
+        111,
+        114,
+        114,
+        114,
+        115,
+        114,
+        114,
+        114,
+        114,
+        113,
+        114,
+        111,
+        114,
+        114,
+        114,
+        119,
+        112,
+        114,
+        114,
+        114,
+        119,
+        113,
+        114,
+        114,
+        115,
+        114,
+        118,
+        111,
+        114,
+        111,
+        114,
+        114,
+        114,
+        114,
+        120,
+        112,
+        114,
+        131,
+        232
+    ]
+}
